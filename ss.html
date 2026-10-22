@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ss.css">
+</head>
+
+<body>
+    <h1>SpendSmart</h1>
+
+    <section>
+        <h3>This Month</h3>
+        Spent: <b id="spent"></b> |
+        Expenses: <b id="count"></b> |
+        Remaining: <b id="remaining"></b> 
+      
+        <p id="warning" class="red"></p>
+        <input id="budget" placeholder="Monthly budget (₹)">
+        <button id="budgetBtn">Save budget</button>
+    </section>
+
+    <section>
+        <h3>Add Expense</h3>
+        <input id="name" placeholder="Name">
+        <input id="amount" placeholder="Amount (₹)">
+        <select id="category">
+            <option value="">Category</option>
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Other</option>
+        </select>
+        <input id="date" type="date">
+        <button id="addBtn">Add</button>
+        <p id="error" class="red"></p>
+    </section>
+
+    <section>
+        <h3>Expenses</h3>
+        <input id="search" placeholder="Search name">
+        <select id="filter">
+            <option>All</option>
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Other</option>
+        </select>
+        <select id="sort">
+            <option value="new">Newest first</option>
+            <option value="old">Oldest first</option>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+        </table>
+        <button id="exportBtn">Export JSON</button>
+        <input id="importFile" type="file" accept=".json">
+        <button id="clearBtn">Clear All</button>
+    </section>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

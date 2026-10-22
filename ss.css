@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    max-width: 750px;
+    margin: 20px auto;
+    background: #518a65;
+}
+
+section {
+    background: rgb(9, 221, 228);
+    padding: 14px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+}
+
+input,
+select,
+button {
+    padding: 7px;
+    margin: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.red {
+    color: crimson;
+    font-weight: bold;
+}
